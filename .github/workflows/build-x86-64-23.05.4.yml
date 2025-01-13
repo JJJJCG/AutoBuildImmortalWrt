@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       profile:
-        description: '请输入要编译固件大小 单位(MB)'
+        description: '2048'
         required: true
         default: '1024'
       include_docker:
@@ -18,7 +18,7 @@ on:
           - 'no'
       enable_pppoe:
         description: "是否配置PPPoE拨号信息?"
-        required: true
+        required: false
         default: 'no'
         type: choice
         options:
